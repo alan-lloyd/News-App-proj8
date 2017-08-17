@@ -1,0 +1,13 @@
+<resources>
+    <string name="news_app_name">Your Business News</string>
+
+<!-- Text to display in the list when there are no books [CHAR LIMIT=NONE] -->
+<string name="no_news">please wait till news items finish loading</string>
+<!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+<string name="no_internet_connection">No internet connection</string>
+<string name="title_placeholder_text">headline</string>
+<string name="subtitle_placeholder_text">sub-title</string>
+<string name="author_placeholder_text">author</string>
+<string name="publication_date_placeholder_text">publication date</string>
+
+</resources>
