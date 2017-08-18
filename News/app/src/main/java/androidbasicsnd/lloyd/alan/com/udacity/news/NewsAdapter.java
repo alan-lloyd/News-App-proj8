@@ -22,22 +22,26 @@ public class NewsAdapter extends ArrayAdapter<News> {
         }
 
         News currentNews = getItem(position);
-        //get received google book data values as Strings
+        //get received Guardian API news data values as Strings
         String publicationDate = currentNews.getPublicationDate();
         String title = currentNews.getTitle();
         String author = currentNews.getAuthor();
+        String articleCategory = currentNews.getArticleCategory();
+
         //put collected data into App display page
+
+        TextView articleCategoryView = (TextView) listItemView.findViewById(R.id.article_category);
+        articleCategoryView.setText(articleCategory);
+
         TextView publishedYearView = (TextView) listItemView.findViewById(R.id.publication_date);
         publishedYearView.setText(publicationDate);
 
         TextView newsTitleView = (TextView) listItemView.findViewById(R.id.news_title);
         newsTitleView.setText(title);
 
-
         TextView authorView = (TextView) listItemView.findViewById(R.id.author);
         authorView.setText(author);
 
         return listItemView;
     }//end of method getView()
-
 }

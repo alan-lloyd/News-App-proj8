@@ -7,12 +7,21 @@
     android:paddingBottom="8dp">
 
     <TextView
+        android:id="@+id/article_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/article_category_placeholder_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <TextView
         android:id="@+id/news_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:fontFamily="sans-serif-medium"
-        android:maxLines="1"
+        android:maxLines="2"
         android:text="@string/title_placeholder_text"
         android:textAllCaps="true"
         android:textAppearance="?android:attr/textAppearanceSmall" />

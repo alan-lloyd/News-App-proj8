@@ -5,8 +5,10 @@ public class News {
     private String title;
     private String author;
     private String url;
+    private String articleCategory;
 
-    public News(String publicationDate, String author, String title, String url) {
+    public News(String articleCategory, String publicationDate, String author, String title, String url) {
+        this.articleCategory = articleCategory;
         this.publicationDate = publicationDate;
         this.author = author;
         this.title = title;
@@ -28,6 +30,10 @@ public class News {
 
     public String getUrl() {
         return url;
+    }
+
+    public String getArticleCategory() {
+        return articleCategory;
     }
 
 }
